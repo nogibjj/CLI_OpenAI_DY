@@ -2,11 +2,11 @@
 
 """
 An openai api key is required to use this script.
-This uses an advanced GPT-3 model and I also used AI via Github Copilot to write this command-line interface.
+This uses an advanced GPT-3 model and I also used AI via Github Copilot to write this
+command-line interface.
 """
-
-import openai
 import os
+import openai
 import click
 
 
@@ -40,4 +40,5 @@ def main(text):
 
 
 if __name__ == "__main__":
+    # pylint: disable=no-value-for-parameter
     main()
