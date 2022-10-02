@@ -29,7 +29,8 @@ def submit_question(text):
 
 
 @click.command()
-@click.argument("text")
+#@click.argument("text")
+@click.option('--text', '-t', help='Ask me anything you want to know', prompt= "What is the question you want to ask?")
 def main(text):
     """This is the main function that you ask the OpenAI API a question to get an answer
 
